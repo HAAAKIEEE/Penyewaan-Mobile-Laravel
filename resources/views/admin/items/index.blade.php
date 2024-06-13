@@ -25,7 +25,9 @@
           },
           {
             data: 'thumbnail',
-            name: 'thumbnail'
+            name: 'thumbnail',
+            orderable: false,
+            searchable: false,
           },
           {
             data: 'name',

@@ -16,9 +16,14 @@ use App\Http\Controllers\Admin\BookingController as AdminBookingController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\Front\LandingController;
+use App\Http\Controllers\Front\DetailController;
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::name('front.')->group(function () {
+    Route::get('/', [LandingController::class, 'index'])->name('index');
+    Route::get('/detail/{slug}', [DetailController::class, 'index'])->name('detail');
 });
 
 // Route::prefix('admin')->name('admin.')->middleware(['auth:sanctum',  config('jetstream.auth_session'),'verified'])->group(function () {
