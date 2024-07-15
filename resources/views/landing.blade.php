@@ -174,15 +174,15 @@
           </div>
           <!-- CTA Button -->
           <div class="mt-[50px]">
-            <!-- Button Primary -->
+          
             <div class="p-1 rounded-full bg-primary group">
               <a href="#!" class="btn-primary">
                 <p class="transition-all duration-[320ms] translate-x-3 group-hover:-translate-x-10 text-center">
                   Explore Cars
                 </p>
                 <img src="/svgs/ic-arrow-right.svg"
-                     class="transition-all duration-[320ms] opacity-0 group-hover:opacity-100 group-hover:translate-x-10"
-                     alt="">
+                class="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-[320ms]"
+                alt="">
               </a>
             </div>
           </div>
